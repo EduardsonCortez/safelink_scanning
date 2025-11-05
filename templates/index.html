@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SafeLink Scanner</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>SafeLink Scanner</h1>
+      <p>Paste a link para i-check muna bago i-open.</p>
+    </header>
+
+    <section class="card">
+      <label for="url">Ilagay ang link dito</label>
+      <input id="url" placeholder="https://example.com/..." autocomplete="off" />
+      <div class="actions">
+        <button id="scanBtn">Scan Link</button>
+        <button id="clearBtn" class="muted">Clear</button>
+      </div>
+
+      <div id="result" class="result hidden">
+        <h2 id="statusText"></h2>
+        <p id="messageText"></p>
+        <div id="issuesList"></div>
+        <div class="meta">
+          <small>Score: <span id="scoreVal"></span></small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small>Tip: Kapag may mga redirect o shortened link, i-scan muna bago buksan.</small>
+    </footer>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
