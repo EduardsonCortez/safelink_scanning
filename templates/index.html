@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SafeLink Scanner</title>
+  <title>SafeLink Scanner - by Eduardson Cortez</title>
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <main class="container">
     <header>
-      <h1>SafeLink Scanner</h1>
-      <p>Paste a link para i-check muna bago i-open.</p>
+      <h1>🛡️ SafeLink Scanner</h1>
+      <p class="subtitle">Before you click, make sure it’s safe — verify every link in seconds.</p>
     </header>
 
-    <section class="card">
-      <label for="url">Ilagay ang link dito</label>
+    <section class="card scanner">
+      <label for="url">Enter a URL to analyze</label>
       <input id="url" placeholder="https://example.com/..." autocomplete="off" />
       <div class="actions">
         <button id="scanBtn">Scan Link</button>
@@ -26,13 +26,20 @@
         <p id="messageText"></p>
         <div id="issuesList"></div>
         <div class="meta">
-          <small>Score: <span id="scoreVal"></span></small>
+          <small>Risk Score: <span id="scoreVal"></span></small>
         </div>
       </div>
     </section>
 
+    <section class="card about">
+      <h3>👨‍💻 About the Developer</h3>
+      <p>Hi! I’m <strong>Eduardson Cortez</strong> — a cybersecurity student and aspiring ethical hacker from Laguna, Philippines.</p>
+      <p>I created <strong>SafeLink Scanner</strong> to help users stay protected from malicious or phishing URLs. My goal is to build simple, powerful tools that promote digital safety and awareness.</p>
+    </section>
+
     <footer>
-      <small>Tip: Kapag may mga redirect o shortened link, i-scan muna bago buksan.</small>
+      <p>Developed by <strong>Eduardson Cortez</strong> • © 2025 All Rights Reserved</p>
+      <small>“Stay safe online — think before you click.”</small>
     </footer>
   </main>
 
